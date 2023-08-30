@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto&family=Sacramento&display=swap');
+
+
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding-left: 10px;
+}
+
+.row_posters::-webkit-scrollbar {
+    display: none;
+  }
+
+.row_poster {
+    
+    padding: 10px;
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    transition: transform 450ms ease-in-out;
+}
+
+.row_poster:hover {
+    transform: scale(1.08);
+}
+
+.largerow {
+    max-height: 300px;
+}
+
+.title {
+    padding-bottom: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}

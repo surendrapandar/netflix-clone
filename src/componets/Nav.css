@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto&family=Sacramento&display=swap');
+
+
+
+.container-navbar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index:3;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_black {
+    background-color: black;
+    transition: ease-in 1s;
+}
+
+
+.nav_items {
+    padding-top: 20px;
+    padding-left: 36px;
+    /* width: 120px; */
+    height: 30px;
+    /* object-fit: contain; */
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: none;
+    
+} 
+
+.nav_items:hover {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.leftside_nav {
+    padding-left: 413px;
+}
+
+.user_logo {
+    width: 100%;
+    border-radius: 20%;
+    height: 41px;
+    margin: -10px;
+}
