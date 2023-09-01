@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto&family=Sacramento&display=swap');
+
+
+.Homescreen {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 332px 50px 332px;
+    justify-content: center;
+}
+.profile_text {
+    color: white;
+    text-align: center;
+    margin-top: 222px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight:100;
+}
+
+.Home_profile {
+    width: 100%;
+    height: 150px;
+    border-radius: 20%;
+    padding: 20px;
+}

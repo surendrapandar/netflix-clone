@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react'
 import "./Nav.css"
 import Netflixlogo from "./netflix.png"
 import user1 from "./profile-icon-5.svg"
+import Mylist from './Mylist'
+
+
+
 
 function Nav() {
   const [show, showHandle] = useState(false)
@@ -21,6 +25,8 @@ function Nav() {
   }, []);
 
   return (
+    
+    // <BrowserRouter>
     // <div className={`'container-navbar' ${show && 'nav_black'`}>
     <div className={`container-navbar ${show && "nav_black"}`}>
     <div className='flex'> 
@@ -29,7 +35,7 @@ function Nav() {
       <a className='nav_items' href='#tvshow'>Tv Shows</a>
       <a className='nav_items' href='#toprated'>Movies</a>
       <a className='nav_items' href='#popular'>Popular</a>
-      <a className='nav_items' href='#'>My List</a>
+      <a className='nav_items' href='mylist'>My List</a>
       <a className='nav_items' href='#'>Browser</a>
       <a className='nav_items' href='#'>Languge</a>
       </div>
