@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Mylist.css"
+import "./Homescreen.css"
 import  profile1 from "./profile-icon-1.svg"
 import  profile2 from "./profile-icon-2.svg"
 import  profile3 from "./profile-icon-3.svg"
@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 function Homescreen() {
   return (
-    <div>
+    <div className='hole'>
     <div className='whois'>
       <h1 className='profile_text'>Who's watching?</h1>
     </div>

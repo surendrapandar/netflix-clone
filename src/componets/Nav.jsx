@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./Nav.css"
 import Netflixlogo from "./netflix.png"
 import user1 from "./profile-icon-5.svg"
-import Mylist from './Mylist'
+import Mylist from './Homescreen'
 
 
 
