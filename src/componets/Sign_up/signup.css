@@ -1,0 +1,46 @@
+
+.email_label {
+    color: white;
+}
+.password_label {
+    color: white;
+}
+
+.form-check-label {
+    color: white;
+}
+
+.form-group {
+    padding-top: 10px;
+}
+
+.form-control {
+    width: 50%;
+}
+
+
+.login_form{
+    padding-top: 230px;
+    padding-left: 512px;
+    
+}
+
+.login_btn {
+    margin-top: 10px;
+    margin-left: 205px;
+}
+
+.login_page {
+    background-image: url("../background.png");
+    height: 100vh;
+    width: 100%;
+
+}
+
+.container {
+    text-align: right;
+    padding-top: 10px;
+    margin-left: 170px;
+    
+    
+  }

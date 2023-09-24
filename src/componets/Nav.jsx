@@ -3,12 +3,29 @@ import "./Nav.css"
 import Netflixlogo from "./netflix.png"
 import user1 from "./profile-icon-5.svg"
 import Mylist from './Homescreen'
+import { Link, useNavigate } from 'react-router-dom'
+import {useUser} from "../context/UserContext"
+import {  signOut } from "firebase/auth";
+import {auth} from '../componets/firebase_auth/firebase-config';
 
 
 
 
 function Nav() {
+
+  const navigate = useNavigate();
+ 
+  const handleLogout = () => {               
+      signOut(auth).then(() => {
+      // Sign-out successful.
+          navigate("/login");
+          console.log("Signed out successfully")
+      }).catch((error) => {
+        console.log(error.message)
+      });
+  }
   const [show, showHandle] = useState(false)
+  const { userEmail } = useUser();
 
   useEffect(() => {
     window.addEventListener("scroll", () =>{
@@ -40,13 +57,19 @@ function Nav() {
       <a className='nav_items' href='#'>Languge</a>
       </div>
     <div className='flex leftside_nav'>
-    <i class="fa-solid fa-magnifying-glass nav_items"></i>
-    <a className='nav_items' href='#' >Children</a>
+    <input className='search_bar' placeholder='Search'></input>
+    <Link to="/Search"><i class="fa-solid fa-magnifying-glass nav_items"></i></Link>
+    <a className='nav_items' href='#' >{userEmail ? userEmail.slice(0, 8) : "Guest"}</a>
     <i class="fa-solid fa-bell nav_items"></i>
-    <img className='nav_items user_logo' src={user1}></img>
-    <i class="fa fa-caret-down nav_items"></i>
+    <Link to="/netflix-clone"><img className='nav_items user_logo' src={user1}></img></Link>
+    {/* <i class="fa fa-caret-down nav_items"></i> */}
+    <Link to="/sign_up"> <button type="submit" class="log_out_btn btn btn-danger" onClick={() => {
+      handleLogout()
+    }}>
+    Log Out
+  </button></Link>
     </div>
-      </div>
+      </div>   
   )
 }
 

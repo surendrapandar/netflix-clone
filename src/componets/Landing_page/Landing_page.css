@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto&family=Sacramento&display=swap');
+
+
+.all_content{
+    background-image: url("../background.png");
+    height: 100vh;
+}
+
+.content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    font-weight: 700;
+    max-width: 950px;
+    padding-bottom: 20px;
+}
+
+.subtitle{
+    padding-bottom: 20px;
+}
+
+.home_login_btn{
+    padding: 10px 50px 10px 50px;
+    font-size: 25px;
+   margin-top: 50px;
+   text-align: center;
+   margin-left: -9px;
+   font-family: 'Roboto', sans-serif;
+
+}

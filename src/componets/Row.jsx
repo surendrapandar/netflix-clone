@@ -13,7 +13,6 @@ function Row(props) {
       height: '390',
       width: '1517',
       playerVars: {
-        // https://developers.google.com/youtube/player_parameters
         autoplay: 1,
       },
     };
@@ -52,8 +51,10 @@ function Row(props) {
       <h1 id={props.id} className="title">{props.title}</h1>
       <div className="row_posters">
       {movies.map( (movie) => (
+        
         <img onClick={ () => handleClick(movie)} className={`row_poster ${props.Islargerow? 'largerow' : ""}`} src={`${imageBaseUrl}${props.Islargerow? movie.poster_path : movie.backdrop_path
 }`}></img>
+        
       ))}
       </div>
       {trailer && <YouTube videoId={trailer} opts={opts}/> };

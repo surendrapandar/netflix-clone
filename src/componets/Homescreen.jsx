@@ -7,7 +7,7 @@ import  profile4 from "./profile-icon-4.svg"
 import  profile5 from "./profile-icon-5.svg"
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
-function Homescreen() {
+function Homescreen() { 
   return (
     <div className='hole'>
     <div className='whois'>

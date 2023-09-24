@@ -2,6 +2,7 @@
 
 .hole {
     background-image: url("./background.png");
+    height: 100vh;
 }
 
 .Homescreen {
